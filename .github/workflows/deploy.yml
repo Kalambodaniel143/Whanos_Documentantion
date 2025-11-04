@@ -1,0 +1,37 @@
+name: Déploiement VitePress sur GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # ou 'master' selon ton repo
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧩 Cloner le dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 📦 Installer les dépendances
+        run: npm ci
+
+      - name: 🏗️ Construire la documentation
+        run: npm run docs:build
+
+      - name: 🚀 Déployer sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
