@@ -4,20 +4,6 @@
 
 **Automated deployment infrastructure that detects, builds, and deploys applications to Kubernetes with a single Git push.**
 
-[![Kubernetes](https://img.shields.io## Documentation
-
-**Complete documentation is available in the `docs/Devs/` directory:**
-
-- 🚀 **[User Guide](USER_GUIDE.md)** - Start here for deployment and usage
-- 🏗️ **[Architecture Overview](ARCHITECTURE.md)** - System design and components
-- 📋 **[Deployment Guide](DEPLOYMENT.md)** - Detailed installation steps
-- ⚙️ **[Configuration Reference](CONFIGURATION.md)** - All configuration options
-- 🤖 **[Ansible Documentation](ANSIBLE.md)** - Playbook technical details
-- 🔧 **[Jenkins Documentation](JENKINS.md)** - Jenkins setup and jobsernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
-[![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Jenkins](https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://www.jenkins.io/)
-[![Ansible](https://img.shields.io/badge/ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
-
 </div>
 
 ---
