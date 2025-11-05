@@ -1,27 +1,12 @@
-1. **Documentation technique** → pour les développeurs (chaque technologie, son rôle, et son intégration).
-2. **Documentation utilisateur (overview)** → pour présenter le projet, ses objectifs et sa valeur.
+# Whanos - Documentation for Dev
 
-Je vais te générer un **modèle en anglais**, directement **au format Markdown (`.md`)**, prêt à être intégré dans ton site VitePress.
-Tu pourras créer deux fichiers distincts, par exemple :
-
-* `docs/technical_documentation.md`
-* `docs/user_documentation.md`
-
----
-
-## 🧩 `technical_documentation.md`
-
-````markdown
-# Whanos - Technical Documentation
-
-## Overview
+## Overview of the projet
 
 **Whanos** is an automated DevOps infrastructure that enables any developer to deploy an application into a Kubernetes cluster simply by pushing their code to a Git repository.  
 It integrates several key technologies — **Docker**, **Jenkins**, **Ansible**, and **Kubernetes** — to achieve full CI/CD automation.
 
----
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 Whanos is built upon four main components, each representing a major DevOps principle:
 
@@ -32,9 +17,8 @@ Whanos is built upon four main components, each representing a major DevOps prin
 | **Ansible** | Configuration Management | Deploys and maintains the Whanos infrastructure on remote servers. |
 | **Kubernetes** | Orchestration | Manages application deployments, scaling, and networking within the cluster. |
 
----
 
-## ⚙️ Docker Integration
+<!-- ## Docker Integration
 
 Whanos relies heavily on **Docker** to containerize supported applications.  
 Each language (C, Java, JavaScript, Python, Befunge) has two image types:
@@ -52,11 +36,9 @@ Each language (C, Java, JavaScript, Python, Befunge) has two image types:
 When Jenkins detects a C application with a `Makefile`, it builds the image using the `whanos-c` base image and runs:
 ```bash
 make && ./compiled-app
-````
+```
 
----
-
-## 🤖 Jenkins Integration
+## Jenkins Integration
 
 **Jenkins** is the automation core of Whanos.
 It continuously monitors Whanos-compatible repositories, builds Docker images, and deploys them.
@@ -76,7 +58,7 @@ It continuously monitors Whanos-compatible repositories, builds Docker images, a
 
 ---
 
-## 🧩 Ansible Integration
+## Ansible Integration
 
 **Ansible** is used to automate the deployment of the entire Whanos infrastructure — including Jenkins setup, Docker installation, and Kubernetes cluster configuration.
 
@@ -96,7 +78,7 @@ ansible-playbook -i inventory.ini deploy.yml
 
 ---
 
-## ☸️ Kubernetes Integration
+## Kubernetes Integration
 
 **Kubernetes** orchestrates containerized applications automatically once built and pushed by Jenkins.
 
@@ -123,7 +105,7 @@ If defined, Whanos ensures the container is deployed to the cluster and accessib
 
 ---
 
-## 🧠 Additional Tools & Best Practices
+## Additional Tools & Best Practices
 
 * **GitHub Actions** or **Jenkinsfile** can extend automation.
 * **Private registries** can be integrated for secure image storage.
@@ -131,7 +113,7 @@ If defined, Whanos ensures the container is deployed to the cluster and accessib
 
 ---
 
-## 🧾 Summary
+## Summary
 
 Whanos integrates four major DevOps “Infinity Stones”:
 
@@ -140,94 +122,4 @@ Whanos integrates four major DevOps “Infinity Stones”:
 3. **Ansible** – Configure and deploy infrastructure.
 4. **Kubernetes** – Orchestrate and scale deployments.
 
-Together, they create a seamless, automated DevOps pipeline capable of handling diverse application stacks.
-
-````
-
----
-
-## 🌍 `user_documentation.md`
-
-```markdown
-# Whanos - User Documentation
-
-## Overview
-
-**Whanos** is a fully automated DevOps platform designed to simplify application deployment.  
-By connecting your Git repository, Whanos automatically builds, containerizes, and deploys your application into a Kubernetes cluster.
-
----
-
-## ✨ Key Features
-
-- 🚀 **Automatic Deployment** — Push your code, and Whanos handles the rest.
-- 🐳 **Multi-language Support** — Supports C, Java, JavaScript, Python, and even Befunge.
-- ⚙️ **Smart Infrastructure** — Combines Docker, Jenkins, Ansible, and Kubernetes.
-- ☁️ **Cloud-Ready** — Fully deployable on any cloud or on-premises environment.
-- 🔁 **Continuous Delivery** — Automatic redeployment when your code changes.
-
----
-
-## 🧭 How It Works
-
-1. **Push your code** to a Whanos-compatible repository.
-2. **Jenkins** detects the update and analyzes your project.
-3. **Docker** builds a language-specific image.
-4. **Ansible** ensures the infrastructure is up and configured.
-5. **Kubernetes** deploys and runs your app.
-
----
-
-## 💻 Supported Languages
-
-| Language | Build Detection | Execution |
-|-----------|----------------|------------|
-| **C** | Makefile | `./compiled-app` |
-| **Java** | pom.xml (Maven) | `java -jar app.jar` |
-| **JavaScript** | package.json | `node .` |
-| **Python** | requirements.txt | `python -m app` |
-| **Befunge** | main.bf | custom execution |
-
----
-
-## 🧱 System Overview
-
-Whanos automates the entire DevOps lifecycle:
-
-````
-
-Git Push → Jenkins Build → Docker Image → Ansible Deploy → Kubernetes Run
-
-````
-
----
-
-## 📦 Example Workflow
-
-1. Developer pushes to GitHub.
-2. Jenkins fetches the repository.
-3. Docker builds an image (`whanos-python` for Python).
-4. The image is pushed to the registry.
-5. Kubernetes deploys it automatically if `whanos.yml` exists.
-
----
-
-## 🌐 Deployment Example
-
-```yaml
-deployment:
-  replicas: 3
-  ports:
-    - 80
-    - 443
-````
-
-The above file tells Whanos to deploy 3 instances of your app and expose ports 80 and 443 to the outside world.
-
----
-
-## 🏁 Conclusion
-
-Whanos brings together the power of **automation**, **consistency**, and **scalability**.
-Whether you are a developer, a DevOps engineer, or an organization, Whanos offers a unified way to go from **code to production in one push.**
-
+Together, they create a seamless, automated DevOps pipeline capable of handling diverse application stacks. -->

@@ -1,6 +1,36 @@
-# Bienvenue sur la documentation 👋
+---
+layout: home
+title: "Whanos - Advanced DevOps Project"
+hero:
+  name: "WHANOS"
+  text: "\nAUTOMATE. CONTAINERIZE. DEPLOY.\n"
+  tagline: "An Advanced DevOps Project from EPITECH"
 
-Voici la documentation officielle de **mon projet**.
+  actions:
+    - theme: brand
+      text: "Get Started"
+      link: /Users/QUICK_START_K8S
+    - theme: alt
+      text: "Technical Docs"
+      link: /Devs/Technincal.md
 
-## 🚀 Objectif
-Cette doc explique comment installer, configurer et utiliser le projet.
+features:
+  - title: 🧠 Smart Automation
+    details: "Push your code and let Whanos build, containerize, and deploy automatically using Jenkins and Kubernetes."
+    link: /Devs
+  - title: 🐳 Docker-Powered
+    details: "Lightweight and standardized images for C, Java, Python, JavaScript, and even Befunge."
+    link: /Devs/Images.md
+  - title: ⚙️ Infrastructure as Code
+    details: "Full deployment automation handled by Ansible for reproducibility and scalability."
+  - title: ☸️ Whanos Architecture
+    details: " A comprehensive technical overview of the Whanos infrastructure, explaining how all components work together to provide automated application deployment"
+    link: /Devs/ARCHITECTURE.md
+  - title: 🔁 Continuous Delivery
+    details: "Automated deployment infrastructure that detects, builds, and deploys applications to Kubernetes with a single Git push."
+  
+    link: /Devs/
+  - title: 🤖 Ansible
+    details: "Technical documentation for the Ansible automation playbook that deploys the entire Whanos infrastructure."
+    link: /Devs/ANSIBLE.md
+---
