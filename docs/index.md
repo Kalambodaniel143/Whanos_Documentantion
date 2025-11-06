@@ -21,8 +21,9 @@ features:
   - title: 🐳 Docker-Powered
     details: "Lightweight and standardized images for C, Java, Python, JavaScript, and even Befunge."
     link: /Devs/Images.md
-  - title: ⚙️ Infrastructure as Code
+  - title: ⚙️ Jenkins Infrastructure as Code
     details: "Full deployment automation handled by Ansible for reproducibility and scalability."
+    link: /Devs/JENKINS.md
   - title: ☸️ Whanos Architecture
     details: " A comprehensive technical overview of the Whanos infrastructure, explaining how all components work together to provide automated application deployment"
     link: /Devs/ARCHITECTURE.md
