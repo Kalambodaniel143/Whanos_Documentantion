@@ -184,9 +184,9 @@ Jenkins will automatically deploy to Kubernetes!
          ▼
 ┌────────────────────────────────┐
 │    Kubernetes Cluster (K3s)    │
-│  ┌────────┐ ┌────────┐ ┌─────┐│
-│  │ Master │ │Worker 1│ │Wrk 2││
-│  └────────┘ └────────┘ └─────┘│
+│  ┌────────┐ ┌────────┐ ┌─────┐ │
+│  │ Master │ │Worker 1│ │Wrk 2│ │
+│  └────────┘ └────────┘ └─────┘ │
 │         Application Pods       │
 └────────────────────────────────┘
 ```
@@ -279,8 +279,6 @@ ssh root@MASTER_IP "kubectl get pods"
 
 ## Example Applications
 
-Check `whanos_example_apps/` directory (in project root) for ready-to-deploy examples:
-
 - **Python Flask app** - `python-hello-world/`
 - **Node.js Express app** - `js-hello-world/`
 - **Java Spring Boot** - `java-hello-world/`
@@ -289,9 +287,6 @@ Check `whanos_example_apps/` directory (in project root) for ready-to-deploy exa
 
 Each includes complete source code and optional `whanos.yml` configuration.
 
-## Contributing
-
-This project is part of the **Epitech DevOps curriculum** (G-DOP-500).
 
 **Team:**
 - Infrastructure automation with Ansible
