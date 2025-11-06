@@ -11,7 +11,7 @@ Welcome to Whanos! This guide will help you deploy your own Whanos infrastructur
 - [Using Whanos](#using-whanos)
 - [Next Steps](#next-steps)
 
-## 🔧 Prerequisites
+## Prerequisites
 
 Before deploying Whanos, ensure you have:
 
@@ -33,7 +33,7 @@ Before deploying Whanos, ensure you have:
 - **Docker Hub account** (for public image hosting)
 - **GitHub account** (for private repository access)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -110,13 +110,13 @@ chmod +x deploy.sh
 ```
 
 The deployment takes approximately **10-15 minutes** and includes:
-- ✅ Docker installation on all VMs
-- ✅ K3s cluster setup (1 master + 2 workers)
-- ✅ Docker Registry deployment
-- ✅ Jenkins server with custom configuration
-- ✅ Base images for all supported languages
+- Docker installation on all VMs
+- K3s cluster setup (1 master + 2 workers)
+- Docker Registry deployment
+- Jenkins server with custom configuration
+- Base images for all supported languages
 
-## 📊 Initial Setup
+## Initial Setup
 
 ### Accessing Jenkins
 
@@ -166,7 +166,7 @@ kubectl get nodes
 # whanos-node-02-xxx      Ready    <none>                 9m    v1.33.5+k3s1
 ```
 
-## 🎯 Using Whanos
+## Using Whanos
 
 ### Deploying Your First Application
 
@@ -237,11 +237,11 @@ service:
 4. **Click "Build with Parameters"**
 
 Jenkins will:
-- ✅ Clone your repository
-- ✅ Detect the language (Python in this example)
-- ✅ Build Docker image using `whanos-python` base
-- ✅ Push to both registries
-- ✅ Deploy to Kubernetes (if `whanos.yml` exists)
+- Clone your repository
+- Detect the language (Python in this example)
+- Build Docker image using `whanos-python` base
+- Push to both registries
+- Deploy to Kubernetes (if `whanos.yml` exists)
 
 #### Step 4: Access Your Application
 
@@ -344,7 +344,7 @@ kubectl delete service my-awesome-app
 helm uninstall my-awesome-app
 ```
 
-## 📚 Next Steps
+## Next Steps
 
 Now that you have Whanos running, explore:
 
@@ -353,7 +353,7 @@ Now that you have Whanos running, explore:
 - **[Helm Charts](HELM.md)** - Customize Kubernetes deployments
 - **[Troubleshooting](TROUBLESHOOTING.md)** - Common issues and solutions
 
-## 🆘 Getting Help
+## Getting Help
 
 ### Check Logs
 
@@ -400,5 +400,3 @@ Each example includes:
 - Optional `whanos.yml` for deployment
 
 ---
-
-**Congratulations!** 🎉 You now have a fully functional Whanos infrastructure. Start deploying applications and enjoy automated DevOps!
